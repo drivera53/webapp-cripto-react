@@ -18,10 +18,10 @@ class Dashboard extends React.Component {
                     <div className="dashboard__chartSection">
                         <div className="dashboard__portfolio">
                             <h1>Bienvenido! {current_user.familyName}</h1> 
-                            <h1>Portfolio total value: ${Number(portfolioData.total_value).toFixed(2)}</h1>
-                            <p>Total Return: ${Number(portfolioData.total_return).toFixed(2)} ({Number(portfolioData.total_return_percentage).toFixed(2)}%)</p>
+                            <h1>Valor total: ${Number(portfolioData.total_value).toFixed(2)}</h1>
+                            <p>Retorno total: ${Number(portfolioData.total_return).toFixed(2)} ({Number(portfolioData.total_return_percentage).toFixed(2)}%)</p>
 
-                            <p>Portfolio Initial Balance: ${Number(portfolioData.initial_balance).toFixed(2)}</p>
+                            <p>Balance Inicial: ${Number(portfolioData.initial_balance).toFixed(2)}</p>
                         </div>
                         <div className="dashboard__chart">
                             <LineGraph />
@@ -33,8 +33,8 @@ class Dashboard extends React.Component {
                     </div>
                     <div className="dashboard__market__section">
                         <div className="dashboard__market__box">
-                            <p> Cryptocurrency market is open 24/7</p>
-                            <h1>My Holdings!</h1>
+                            <p>El mercado esta abierto 24/7</p>
+                            <h1>Mis Criptomonedas!</h1>
                         </div>
                     </div>
                     <div className="dashboard__market__section">

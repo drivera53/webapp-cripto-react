@@ -72,7 +72,7 @@ class LoginForm extends React.Component{
             //     <input type='submit'/>
             // </form>
             <div className="g-signin">
-                <h1>Trader</h1>
+                <h1>Kryptonomía</h1>
                 <GoogleLogin
                     // https krytonomia
                     clientId="790536304277-je70952tj7km6buq9481adiaij6tt8nl.apps.googleusercontent.com"
