@@ -74,8 +74,10 @@ class LoginForm extends React.Component{
             <div className="g-signin">
                 <h1>Trader</h1>
                 <GoogleLogin
+                    // https krytonomia
+                    clientId="790536304277-je70952tj7km6buq9481adiaij6tt8nl.apps.googleusercontent.com"
                     // Heroku
-                    clientId="790536304277-938mens7eonu7es1cslm5d9ba65q9cgk.apps.googleusercontent.com"
+                    // clientId="790536304277-938mens7eonu7es1cslm5d9ba65q9cgk.apps.googleusercontent.com"
                     // clientId="790536304277-cic9pp1kkefescslkbs60s035a38m0gb.apps.googleusercontent.com"
                     buttonText="Iniciar sesión"
                     onSuccess={this.onLoginSuccess}
