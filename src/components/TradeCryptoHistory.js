@@ -16,14 +16,14 @@ class TradeCryptoHistory extends React.Component {
                 </div>
                 <div className="row__intro">
                     <h1>{name}</h1>
-                    <p>Fill date: {created_at}</p>
+                    <p>Fecha: {created_at}</p>
                 </div>
                 <div className="row__mini_chart">
                     <img src={StockMiniChart} height={35} alt="Mini-chart"/>
                 </div>
                 <div className="row__numbers">
-                    <p>Trade type: {trade_type.toUpperCase()}</p>
-                    <p className="row__price">Filled quantity: {quantity} {symbol.toUpperCase()} at ${price}</p>
+                    <p>Tipo de transacción: {trade_type.toUpperCase()}</p>
+                    <p className="row__price">Cantidad y precio: {quantity} {symbol.toUpperCase()} a ${price}</p>
                 </div> 
             </div>
         ) 
