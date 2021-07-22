@@ -96,7 +96,7 @@ export class TradeCrypto extends React.Component {
 
                     <div className="crypto__header_medium">
                         <form onSubmit={this.handleSubmit}>
-                            <p>Puedes comprar hasta {Number(portfolioData.buying_power/current_price).toFixed(1)} {name} criptomonedas.</p>
+                            <p>Puedes comprar hasta {Number(portfolioData.buying_power/current_price).toFixed(1)} criptomonedas de {name}.</p>
                             <h1>Transacción</h1>
                             <label>Cantidad:</label>
                             <br></br>
@@ -111,7 +111,7 @@ export class TradeCrypto extends React.Component {
                                 <option value="sell">Vender</option>
                             </select>
                             <br></br>
-                            <input type='submit'/>
+                            <input type='submit' value="Enviar"/>
                             <h1>Total: ${(this.state.quantity * current_price).toFixed(2)}</h1>
                         </form>
                     </div>
