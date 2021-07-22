@@ -20,16 +20,16 @@ export class TradeCryptoHolding extends React.Component {
                         </div>
                         <div className="row__intro">
                             <h1>{name}</h1>
-                            <p>{symbol.toUpperCase()} Quantity: {quantity}</p>
-                            <p>Average cost: ${Number(average_cost).toFixed(2)}</p>
+                            <p>Cantidad de {symbol.toUpperCase()}: {quantity}</p>
+                            <p>Precio promedio de compra: ${Number(average_cost).toFixed(2)}</p>
                         </div>
                         <div className="row__mini_chart">
                             <img src={StockMiniChart} height={35} alt="Mini-chart"/>
                         </div>
                         <div className="row__numbers">
-                        <p className="row_percentage">Current price: ${Number(current_price).toFixed(2)} </p>
-                        <p className="row__price">Total value: ${total_value}</p>
-                        <p className="row_percentage">Total return: ${Number(total_return).toFixed(2)}({Number(total_return_percentage).toFixed(2)}%)</p>
+                        <p className="row_percentage">Precio actual: ${Number(current_price).toFixed(2)} </p>
+                        <p className="row__price">Valor total: ${total_value}</p>
+                        <p className="row_percentage">Retorno total: ${Number(total_return).toFixed(2)}({Number(total_return_percentage).toFixed(2)}%)</p>
                         </div> 
                     </div>
                 </div>
