@@ -102,7 +102,7 @@ export class TradeCrypto extends React.Component {
                             <br></br>
                             <input
                                 name="quantity"
-                                placeholder="Quantity"
+                                placeholder="0"
                                 onChange={this.handleQuantityChange}
                                 value={this.state.quantity}
                             />
