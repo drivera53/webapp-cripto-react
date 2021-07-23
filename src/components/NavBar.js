@@ -2,6 +2,7 @@ import React from 'react'
 import './NavBar.css'
 import { GoogleLogin, GoogleLogout } from 'react-google-login'
 import kryptonomia_icon from './kryptonomia-icon.png'
+import kryptonomia_banner from './kryptonomia-banner.png'
 import LogoutForm from '../containers/logoutForm'
 
 import {
@@ -19,7 +20,8 @@ export const NavBar = () => {
             <div className="navBar__logo">
                 <Link to="/">
                     {/* <img src="https://assets.coingecko.com/coins/images/12817/small/filecoin.png?1602753933" width={40} alt="Flatcoin-logo"/> */}
-                    <img src={kryptonomia_icon} width={40} alt="Kryptonomia-logo"/>
+                    {/* <img src={kryptonomia_icon} width={40} alt="Kryptonomia-logo"/> */}
+                    <img src={kryptonomia_banner} width={300} alt="Kryptonomia"/>
                 </Link>
             </div>
             {/* Menu */}
