@@ -78,6 +78,7 @@ class LoginForm extends React.Component{
                     clientId="790536304277-je70952tj7km6buq9481adiaij6tt8nl.apps.googleusercontent.com"
                     // Heroku
                     // clientId="790536304277-938mens7eonu7es1cslm5d9ba65q9cgk.apps.googleusercontent.com"
+                    // Localhost
                     // clientId="790536304277-cic9pp1kkefescslkbs60s035a38m0gb.apps.googleusercontent.com"
                     buttonText="Iniciar sesión"
                     onSuccess={this.onLoginSuccess}

@@ -69,19 +69,19 @@ export class TradeCrypto extends React.Component {
                     <div className="crypto__content">
                         <div id={name} className="row">
                             <div className="row__intro">
-                                <p>Market Cap Rank: #{market_cap_rank}</p>
-                                <p>Trading Volume: ${total_volume}</p>
-                                <p>24h Low/24h High: ${low_24h}/${high_24h}</p>
+                                <p>Rango de capitalización de mercado: #{market_cap_rank}</p>
+                                <p>Volumen en 24h: ${total_volume.toFixed(2)}</p>
+                                <p>Bajo/Alto 24h: ${low_24h.toFixed(2)}/${high_24h.toFixed(2)}</p>
                             </div>
                             <div className="row__intro">
-                                <p>Market Cap: ${market_cap}</p>
-                                <p>Circulating Supply: {circulating_supply}</p>
-                                <p>Price Change 24h: ${price_change_24h}</p>
+                                <p>Capitalización de mercado: ${market_cap}</p>
+                                <p>Criptomonedas en circulación: {circulating_supply.toFixed(2)}</p>
+                                <p>Variación de precio 24h: ${price_change_24h.toFixed(2)}({Number(price_change_percentage_24h).toFixed(2)}%)</p>
                             </div>
                             <div className="row__intro">
-                            <p>Market Cap Change 24h: ${market_cap_change_24h} ({Number(market_cap_change_percentage_24h).toFixed(2)}%)</p>
-                            <p>Total Supply: {total_supply}</p>
-                                <p>Price Change Percentage 1h: {Number(price_change_percentage_1h_in_currency).toFixed(2)}%</p>
+                            <p>Variación de capitalización 24h: ${market_cap_change_24h} ({Number(market_cap_change_percentage_24h).toFixed(2)}%)</p>
+                            <p>Suministro total: {total_supply}</p>
+                            <p>Variación de precio 1h: {Number(price_change_percentage_1h_in_currency).toFixed(2)}%</p>
                                 
     
                             </div>

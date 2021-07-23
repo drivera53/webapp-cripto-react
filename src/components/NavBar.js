@@ -27,10 +27,10 @@ export const NavBar = () => {
             {/* Menu */}
             <div className="navBar__menuItems">
                 <Link to="/">
-                    <a>Inicio</a>
+                    <a>INICIO</a>
                 </Link>
                 <Link to="/transacciones">
-                    <a>Transacciones</a>
+                    <a>TRANSACCIONES</a>
                 </Link>
                 {/* <GoogleLogout onClick= {logOut} */}
                 {/* <GoogleLogout onClick= {logOut}
@@ -42,10 +42,10 @@ export const NavBar = () => {
             {/* Search */}
             <div className="navBar__search">
                 <div className="navBar__searchContainer">
-                    <input placeholder="Search" type="text" />
+                    <input placeholder="Buscar" type="text" />
                 </div>
             </div>
-            <div className="navBar__search">
+            <div className="navBar__logout">
                 <LogoutForm />
             </div>
         </div>
