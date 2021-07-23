@@ -17,7 +17,7 @@ class Dashboard extends React.Component {
                 <div className="dashboard__container">
                     <div className="dashboard__chartSection">
                         <div className="dashboard__portfolio">
-                            <h1>Bienvenido! {current_user.familyName}</h1> 
+                            <h1>Bienvenido! {current_user.givenName}</h1> 
                             <h1>Valor total: ${Number(portfolioData.total_value).toFixed(2)}</h1>
                             <p>Retorno total: ${Number(portfolioData.total_return).toFixed(2)} ({Number(portfolioData.total_return_percentage).toFixed(2)}%)</p>
 
