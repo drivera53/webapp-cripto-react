@@ -5,6 +5,7 @@ import { fetchLoggedInUser } from './actions/userActions'
 import { logOutUser } from './actions/userActions'
 import CryptoList from './components/CryptoList'
 import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 import NotLoggedInNavBar from './components/NotLoggedInNavBar'
 import Dashboard from './components/Dashboard'
 import LoginForm from './containers/loginForm'
@@ -75,49 +76,45 @@ class App extends Component {
     // console.log(this.props.current_user)
     return (
       <>
-        <div className="App">
-          <Router>
+        <Router>
+          {/* Handling LOG IN! */}
+          {this.props.login? <><div className="App">
             <div className="app__navBar">
-              {/* Handling LOG IN! */}
-              {this.props.login? <><div className="App">
-                <div className="app__navBar">
-                  <NavBar />
-                </div>
-                <Switch>
-                  <Route exact path="/">   
-                    <div className="app__body">
-                      <div className="app__container">
-                        {this.handleUserDashboardLoading()}
-                        {this.handleCryptoListLoading()}
-                      </div>
-                    </div>
-                  </Route>
-
-                  <Route exact path="/transacciones">
-                    {this.handleTradeCryptoHistoryListLoading()}
-                  </Route>
-
-                  <Route path="/coins/:coin_id" component={this.handleCryptoProps} />
-
-                  <Route path="/" render={() => <div><h1>Oops! That page doesn't exist.</h1></div>} />
-                </Switch>
-              </div>
-              </> 
-              : <Switch>
-
-              <Route exact path="/">
-                <LoginForm />
-              </Route>
-             
-              <Route path="/" render={() => <div><h1>Oops! That page doesn't exist.</h1></div>} 
-              />
-
-            </Switch> }
+              <NavBar />
             </div>
+            <Switch>
+              <Route exact path="/">   
+                <div className="app__body">
+                  <div className="app__container">
+                    {this.handleUserDashboardLoading()}
+                    {this.handleCryptoListLoading()}
+                  </div>
+                </div>
+              </Route>
 
-              
-          </Router>
-        </div>
+              <Route exact path="/transacciones">
+                {this.handleTradeCryptoHistoryListLoading()}
+              </Route>
+
+              <Route path="/coins/:coin_id" component={this.handleCryptoProps} />
+
+              <Route path="/" render={() => <div><h1>Oops! That page doesn't exist.</h1></div>} />
+            </Switch>
+            <div className="app__footer">
+              <Footer />
+            </div>
+          </div>
+          </> 
+          : <Switch>
+
+          <Route exact path="/">
+            <LoginForm />
+          </Route>
+          
+          <Route path="/" render={() => <div><h1>Oops! That page doesn't exist.</h1></div>} 
+          />
+          </Switch> }  
+        </Router>
       </>
     )
   }

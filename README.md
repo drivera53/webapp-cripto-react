@@ -2,7 +2,7 @@
 Welcome to React - FlatCoin! This App was develop as a Flatiron School React project. I developed this app to help users practice trading cryptocurrencies using virtual (fake) money.
 
 # Installation
-You may fork this front end repository, but in order to work you need to fork its [back end repository](https://github.com/drivera53/react-flatcoin-rails-backend) as well.
+You may fork this front end repository, but in order to work you need to fork its [back end repository](https://github.com/drivera53/webapp-cripto-rails-backend) as well.
 
 # Usage
 Run `rails s` on your back end to start the server. Then on this front end run: 
